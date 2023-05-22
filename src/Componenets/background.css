@@ -1,0 +1,15 @@
+.bgd{
+    background-color: rgb(61, 61, 215);
+}
+
+.card-title{
+    height: 100px;
+}
+
+.card-text{
+    height: 200px;
+}
+
+.hlr{
+    background-color: rgb(195, 232, 232);
+}
