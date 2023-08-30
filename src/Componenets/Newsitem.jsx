@@ -29,3 +29,6 @@ export default class Newsitem extends Component {
     );
   }
 }
+
+// api keys
+// 846909bd8e1942e79b516112b25b9dea

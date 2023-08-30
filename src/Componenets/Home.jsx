@@ -13,7 +13,7 @@ export default class Home extends Component {
 
   getAPIData = async () => {
     var response = await fetch(
-      `https://newsapi.org/v2/everything?q=${this.props.q}&language=hi&bitcoin&apiKey=e3ec1797d2294036b1bfef9dd35f0cd7`
+      `https://newsapi.org/v2/everything?q=${this.props.q}&language=hi&bitcoin&apiKey=846909bd8e1942e79b516112b25b9dea`
     );
 
     var result = await response.json();
