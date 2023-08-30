@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Newsitem from "./Newsitem";
-import "./background.css"
+import "./background.css";
 
 export default class Home extends Component {
   constructor() {
@@ -26,8 +26,8 @@ export default class Home extends Component {
     this.getAPIData();
   }
 
-  componentDidUpdate(oldProps){
-    if(this.props === oldProps){
+  componentDidUpdate(oldProps) {
+    if (this.props === oldProps) {
       this.getAPIData();
     }
   }
@@ -38,20 +38,18 @@ export default class Home extends Component {
         <div className="conainer-fluid">
           <div className="row">
             <h5 className="bgd text-center p-2">{this.props.q} News Section</h5>
-            {
-            this.state.articles.map((item,index) =>{
-                return <Newsitem 
-                key={index}
-                pic = {item.urlToImage}
-                title = {item.title}
-                description = {item.description}
-                source = {item.source.name}
-                date = {item.publishedAt}
-
+            {this.state.articles.map((item, index) => {
+              return (
+                <Newsitem
+                  key={index}
+                  pic={item.urlToImage}
+                  title={item.title}
+                  description={item.description}
+                  source={item.source.name}
+                  date={item.publishedAt}
                 />
-            
-            })
-            } 
+              );
+            })}
           </div>
         </div>
       </div>
